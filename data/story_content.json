@@ -1,0 +1,519 @@
+{
+    "header": {
+        "title": "APSS TRADESPHERE LLP",
+        "intro": "Association For Premium Sourcing and Supply"
+    },
+    "partners": [
+        {
+            "name": "Anu Rao",
+            "title": "Head of Sales & Marketing",
+            "image": "https://img.youtube.com/vi/qiQXFSU_EwU/hqdefault.jpg",
+            "video_url": "https://www.youtube.com/embed/qiQXFSU_EwU"
+        },
+        {
+            "name": "Sujit Singh",
+            "title": "Quality & Procurement Head",
+            "image": "https://img.youtube.com/vi/mp89kJmgFus/hqdefault.jpg",
+            "video_url": "https://www.youtube.com/embed/mp89kJmgFus"
+        },
+        {
+            "name": "Sanjeev Singh",
+            "title": "Sales & Client Relationship Manager",
+            "image": "https://img.youtube.com/vi/mp89kJmgFus/hqdefault.jpg",
+            "video_url": "https://www.youtube.com/embed/mp89kJmgFus"
+        }
+    ],
+    "testimonials": [
+        {
+            "type": "text",
+            "quote": "Excellent quality spices and timely delivery. Highly recommended!",
+            "flag": "🇦🇪",
+            "author": "Dubai Importer"
+        },
+        {
+            "type": "text",
+            "quote": "APSS TradeSphere has been our reliable partner for premium turmeric. The curcumin content is exactly as promised.",
+            "flag": "🇺🇸",
+            "author": "USA Distributor",
+            "video_url": ""
+        },
+        {
+            "type": "text",
+            "video_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            "quote": "Professional team and seamless documentation process.",
+            "flag": "🇬🇧",
+            "author": "UK Wholesaler"
+        },
+        {
+            "type": "text",
+            "quote": "Best source for bulk Indian spices. Their black pepper is top notch.",
+            "flag": "🇸🇦",
+            "author": "Saudi Arabia Retailer",
+            "video_url": ""
+        }
+    ],
+    "products": [
+        {
+            "id": "areca",
+            "name": "Areca Palm Leaf Plates",
+            "description": "100% Biodegradable & Compostable Tableware",
+            "long_description": "Our Areca Palm Leaf Plates represent the pinnacle of sustainable dining solutions, offering a perfect blend of elegance, durability, and eco-responsibility. Handcrafted from the naturally fallen sheaths of the Areca Palm tree, no trees are ever cut or harmed in the process. Each plate boasts a unique, natural wood-like texture and grain pattern, adding a rustic yet premium touch to any table setting. <br><br>Beyond their aesthetic appeal, these plates are engineered for performance. They are exceptionally sturdy, microwave-safe, and capable of withstanding hot, cold, and liquid foods without leaking or bending. Completely free from chemicals, bleaches, and dyes, they serve as a 100% biodegradable and compostable alternative to harmful plastic and styrofoam. Whether for grand weddings, intimate parties, or daily use in eco-conscious restaurants, our Areca plates return to the earth as nutrient-rich compost in just 90 days.",
+            "image": "assets/images/products/1770372438_Areca_leaf_Tray.jpg",
+            "pdf": "",
+            "gallery": [
+                {
+                    "path": "assets/images/products/1770366782_0_Areca_leaf_items_4.jpg",
+                    "name": "APSS Collection",
+                    "description": "premium collection of natural Areca Palm Leaf tableware. It features a versatile range of heavy-duty, square-shaped plates in multiple sizes, paired with complementary wooden cutlery (knives and forks) to provide a complete, sustainable dining solution",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770403424_1_noraml_collection.png",
+                    "name": "APSS Special Use Verity",
+                    "description": "\"Special Use Variety\" collection from APSS TradeSphere LLP, featuring a diverse range of 100% natural Areca Palm Leaf dinnerware. Designed for high-end hospitality and creative catering, this set highlights our ability to supply unique shapes beyond standard dinner plates",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770403424_2_noraml_collection_2.png",
+                    "name": "APSS General Use Verity",
+                    "description": "General Use Variety\" collection from APSS TradeSphere LLP, showcasing a comprehensive range of essential Areca Palm Leaf dinnerware for high-volume hospitality and daily professional catering. This versatile set is designed to meet the fundamental needs of the global food service market with sustainable, premium-quality solutions.",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770368980_3_Areca_leaf_items_6.jpg",
+                    "name": "APSS 10inch square plates",
+                    "description": "10-inch square plate, engineered for heavy-duty institutional and high-end event catering. These plates represent our highest standard for durability and export readiness",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770368980_4_Areca_leaf_items_8.jpg",
+                    "name": "Our Collection Of Regular shapes",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770370822_5_10_inch_Round.jpg",
+                    "name": "10 inch round plates",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770372545_6_round_areca_leaf_plates_500x500_1.jpg",
+                    "name": "12 inch Round with 4 compartment",
+                    "description": "",
+                    "height": "280px"
+                }
+            ],
+            "qa_gallery": [],
+            "qa_video": "https://youtube.com/shorts/jLQM7IGbJ4M",
+            "qa_video_title": "Heat Test",
+            "lifecycle_intro": "We don't cut trees. We wait for nature to gift us fallen leaves. Our chemical-free manufacturing process ensures the purest form of tableware.",
+            "lifecycle_steps": [
+                {
+                    "title": "Collection of Fallen Leaves",
+                    "desc": "Farmers collect naturally fallen sheaths from Areca Palm farms. No trees are harmed."
+                },
+                {
+                    "title": "High Pressure Cleaning",
+                    "desc": "Leaves are soaked and jet-washed with fresh spring water to remove dust and particles."
+                },
+                {
+                    "title": "Heat Pressing & Shaping",
+                    "desc": "Heat and pressure are applied to mold the leaves into sturdy shapes. This also sterilizes the product."
+                },
+                {
+                    "title": "UV Sterilization & Packing",
+                    "desc": "Final products pass through UV light treatment before being shrink-wrapped for export."
+                },
+                {
+                    "title": "Returns to Earth",
+                    "desc": "After use, the plate composts in 90 days, becoming nutrient-rich soil."
+                }
+            ],
+            "highlights": [
+                {
+                    "icon": "fas fa-hand-holding-heart",
+                    "title": "Ethical Farm-to-Table",
+                    "desc": "Directly sourced from farmers in Shimoga, ensuring fair wages and fresh harvest without middlemen."
+                },
+                {
+                    "icon": "fas fa-tint-slash",
+                    "title": "Moisture Controlled",
+                    "desc": "Every pack includes silica gel and is shrink-wrapped to prevent fungal growth during transit."
+                },
+                {
+                    "icon": "fas fa-microscope",
+                    "title": "3-Stage QC Process",
+                    "desc": "Manual inspection at farm, factory, and pre-shipment to ensure zero cracks or fungal spots."
+                }
+            ],
+            "specs": [
+                {
+                    "icon": "fas fa-leaf",
+                    "title": "TRULY SUSTAINABLE",
+                    "desc": "100% Compostable"
+                },
+                {
+                    "icon": "fas fa-shield-alt",
+                    "title": "100% FOOD SAFE",
+                    "desc": "No BPA, Toxins or Chemicals"
+                }
+            ],
+            "fun_fact": "Areca plates withstand temperatures up to 200\u00b0C for short durations and are completely non-toxic even when heated.",
+            "profile_text": "",
+            "welcome_message": "",
+            "why_choose_custom": "",
+            "performance_prefix": "Top Performing",
+            "qa_video_2": "https://youtube.com/shorts/643jcx4KX6o",
+            "performance_gallery": [
+                {
+                    "path": "assets/images/performance/1770571392_perf_0_Areca_leaf_items-8.jpg",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/performance/1770571392_perf_1_Areca_leaf_items-3.jpg",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/performance/1770571392_perf_2_10_inch_Round.jpg",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/performance/1770571392_perf_3_Areca_leaf_items-10.jpg",
+                    "height": "280px"
+                }
+            ],
+            "page3_image": {
+                "path": "assets/images/products/1770572310_p3_Areca_leaf_items-9.jpg",
+                "height": "400px"
+            },
+            "image_height": "80px"
+        },
+        {
+            "id": "turmeric",
+            "name": "Turmeric Powder & Fingers",
+            "description": "High Curcumin Content, Farm Fresh",
+            "long_description": "Sourced directly from the world-renowned spice belt of Salem and Erode, our Turmeric (Curcuma longa) is celebrated for its exceptionally high Curcumin content and vibrant, deep golden hue. We take immense pride in delivering a product that is as pure as nature intended\u2014cultivated using traditional farming methods that prioritize soil health and crop vitality. <br><br>Every batch serves as a powerhouse of health benefits, widely revered for its anti-inflammatory and antioxidant properties. We meticulously process the rhizomes by boiling, sun-drying, and polishing them to preserve their essential oils and medicinal potency. Our turmeric is strictly tested to be free from artificial colors (like lead chromate) and fillers, ensuring you receive only the most authentic aroma and flavor. Available in premium polished fingers for grinding or fine powder for immediate culinary and medicinal use, it is the gold standard for global kitchens.",
+            "image": "assets/images/slider_turmeric.png",
+            "pdf": "",
+            "gallery": [
+                {
+                    "path": "assets/images/products/1770376013_0_Erode_Turmeric_2.jpg",
+                    "name": "GI-tagged Erode turmeric finger",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770376013_1_Erode_Turmeric_3.jpg",
+                    "name": "Premium Polished Turmeric",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770376013_2_Erode_Turmeric_1.jpg",
+                    "name": "Raw Turmeric Fingers",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770376013_3_Turmeric_6.jpg",
+                    "name": "Salem Turmeric Finger",
+                    "description": "",
+                    "height": "280px"
+                },
+                {
+                    "path": "assets/images/products/1770376424_4_download.jpeg",
+                    "name": "Salem variety",
+                    "description": "",
+                    "height": "260px"
+                },
+                {
+                    "path": "assets/images/products/1770376424_5_images.jpeg",
+                    "name": "Chinna Nadan",
+                    "description": "",
+                    "height": "280px"
+                }
+            ],
+            "qa_gallery": [
+                {
+                    "path": "assets/images/qa/1770573854_qa_0_Quality_Report_Turmeric.jpeg",
+                    "height": "280px"
+                }
+            ],
+            "qa_video": "",
+            "qa_video_title": "",
+            "lifecycle_intro": "Grown in the rich soils of Salem, our turmeric is cultivated using traditional organic methods, ensuring maximum potency and purity.",
+            "lifecycle_steps": [
+                {
+                    "title": "Sustainable Farming",
+                    "desc": "Sourced from Salem's specialized turmeric belt, ensuring high Curcumin natural content."
+                },
+                {
+                    "title": "Boiling & Drying",
+                    "desc": "Rhizomes are boiled traditionally and sun-dried to preserve color and aroma."
+                },
+                {
+                    "title": "Polishing",
+                    "desc": "Dried fingers are polished to remove the rough outer layer for a smooth finish."
+                },
+                {
+                    "title": "Quality Grading",
+                    "desc": "Strict sorting for size, color, and quality before grinding or packing."
+                },
+                {
+                    "title": "Pure Packing",
+                    "desc": "Packed in eco-friendly bulk bags to retain freshness and potency."
+                }
+            ],
+            "highlights": [
+                {
+                    "icon": "fas fa-vial",
+                    "title": "High Curcumin Guarantee",
+                    "desc": "Sourced from specific belts in Salem, rigorously tested to ensure >3% Curcumin content."
+                },
+                {
+                    "icon": "fas fa-sun",
+                    "title": "Traditional Processing",
+                    "desc": "Boiled in traditional pots and sun-dried on clean mats to preserve essential oils and natural color."
+                },
+                {
+                    "icon": "fas fa-gem",
+                    "title": "Double Polished",
+                    "desc": "Mechanically double-polished fingers to ensure a clean, bright yellow appearance with no skin."
+                }
+            ],
+            "specs": [
+                {
+                    "icon": "fas fa-check-circle",
+                    "title": "100% NATURAL",
+                    "desc": "No Additives or Preservatives"
+                },
+                {
+                    "icon": "fas fa-flask",
+                    "title": "LAB TESTED",
+                    "desc": "Certified for Purity & Curcumin"
+                }
+            ],
+            "fun_fact": "Turmeric is known as the \"Golden Spice\" and has been used in India for over 4000 years for its medicinal properties.",
+            "profile_text": "",
+            "welcome_message": "",
+            "why_choose_custom": "",
+            "performance_prefix": "Top Performing",
+            "qa_video_2": "",
+            "performance_gallery": [],
+            "image_height": "280px",
+            "page3_image": {
+                "path": "assets/images/products/1770573781_p3_Gemini_Generated_Image_hkvlrohkvlrohkvl.png",
+                "height": "400px"
+            }
+        },
+        {
+            "id": "chilli",
+            "hidden": true,
+            "name": "Red Chilli",
+            "description": "Spicy Guntur & Byadgi Varieties",
+            "image": "assets/images/slider_red_chilli.png",
+            "pdf": "",
+            "gallery": [],
+            "qa_gallery": [],
+            "qa_video": "",
+            "qa_video_title": "",
+            "lifecycle_intro": "Harvested from the vibrant fields of Guntur, our red chillies are sun-dried to perfection, locking in the fiery heat and rich color.",
+            "lifecycle_steps": [
+                {
+                    "title": "Organic Farming",
+                    "desc": "Grown in the sunny Guntur region using traditional farming methods."
+                },
+                {
+                    "title": "Sun Drying",
+                    "desc": "Chillies are spread on open drying yards to dry naturally under the sun."
+                },
+                {
+                    "title": "Stem Removal",
+                    "desc": "Manual sorting and destemming to ensure only the best pods remain."
+                },
+                {
+                    "title": "Grading",
+                    "desc": "Sorted by color value (ASTA) and pungency (SHU) to meet specific needs."
+                },
+                {
+                    "title": "Packing",
+                    "desc": "Packed in moisture-proof bags to retain color and heat."
+                }
+            ],
+            "highlights": [
+                {
+                    "icon": "fas fa-fire",
+                    "title": "Fiery Heat",
+                    "desc": "High pungency varieties available for maximum spice."
+                },
+                {
+                    "icon": "fas fa-sun",
+                    "title": "Sun Dried",
+                    "desc": "Natural drying process preserves the authentic taste."
+                },
+                {
+                    "icon": "fas fa-globe-americas",
+                    "title": "Global Standard",
+                    "desc": "Aflatoxin controlled and ready for export markets."
+                }
+            ],
+            "specs": [
+                {
+                    "icon": "fas fa-pepper-hot",
+                    "title": "HIGH PUNGENCY",
+                    "desc": "High SHU Levels"
+                },
+                {
+                    "icon": "fas fa-check-double",
+                    "title": "COLOR RICH",
+                    "desc": "High ASTA Value"
+                }
+            ],
+            "fun_fact": "India is the world's largest producer, consumer, and exporter of chilli peppers."
+        },
+        {
+            "id": "blackpepper",
+            "hidden": true,
+            "name": "Black Pepper",
+            "description": "The King of Spices - Bold & Aromatic",
+            "image": "assets/images/slider_black_pepper.png",
+            "pdf": "",
+            "gallery": [],
+            "qa_gallery": [],
+            "qa_video": "",
+            "qa_video_title": "",
+            "lifecycle_intro": "Known as 'Black Gold', our pepper is harvested from the lush vines of Kerala and dried to create the boldest flavor profile.",
+            "lifecycle_steps": [
+                {
+                    "title": "Vine Cultivation",
+                    "desc": "Grown on supporting trees in the humid, shade-grown spice plantations."
+                },
+                {
+                    "title": "Harvesting",
+                    "desc": "Spikes are hand-picked when the berries are fully mature and green."
+                },
+                {
+                    "title": "Threshing",
+                    "desc": "Berries are separated from the spikes using mechanical threshers."
+                },
+                {
+                    "title": "Blanching & Drying",
+                    "desc": "Briefly dipped in hot water, then sun-dried until the skin creates the black wrinkle."
+                },
+                {
+                    "title": "Garbling",
+                    "desc": "Cleaned, graded by size (Telecherry, Malabar), and packed."
+                }
+            ],
+            "highlights": [
+                {
+                    "icon": "fas fa-crown",
+                    "title": "King of Spices",
+                    "desc": "Sourced from the Malabar coast, the home of pepper."
+                },
+                {
+                    "icon": "fas fa-wind",
+                    "title": "Bold Aroma",
+                    "desc": "High volatile oil content for superior fragrance."
+                },
+                {
+                    "icon": "fas fa-leaf",
+                    "title": "Pure & Natural",
+                    "desc": "No polishing agents or artificial additives used."
+                }
+            ],
+            "specs": [
+                {
+                    "icon": "fas fa-cubes",
+                    "title": "HIGH DENSITY",
+                    "desc": "500-580 GL Varieties"
+                },
+                {
+                    "icon": "fas fa-check-circle",
+                    "title": "DOUBLE WASHED",
+                    "desc": "Dust & Stem Free"
+                }
+            ],
+            "fun_fact": "Black pepper was once so valuable it was used as currency and collateral in the Middle Ages."
+        },
+        {
+            "id": "makhana",
+            "name": "Makhana (Fox Nuts)",
+            "description": "Fox Nuts (Phool Makhana) - A powerhouse of nutrition and the perfect guilt-free superfood snack.",
+            "long_description": "Fox Nuts, commonly known as Phool Makhana, are not just a snack but a powerhouse of nutrition derived from the seeds of the Euryale Ferox lily plant. Cultivated in the nutrient-rich stagnant waters of Eastern India, primarily Bihar, these popped lotus seeds have been a staple in Ayurvedic medicine for centuries, revered for their ability to balance the body's constitution (Doshas).\n\nUnlike processed chips or fried snacks, our Makhana is 100% natural, gluten-free, and vegan, making it an ideal guilt-free indulgence for health-conscious consumers worldwide. Each kernel is hand-harvested by local farming communities, sun-dried to reduce moisture, and roasted in traditional earthen pans until they pop into white, fluffy spheres. This artisanal process creates a light, crunchy texture that is low in calories yet exceptionally high in fiber, magnesium, potassium, and plant-based protein.\n\nAt APSS TradeSphere, we go beyond standard grading. We source only the finest 'Phool Makhana', meticulously selected for size (5 Suta+), consistency, and purity. Our premium grade ensures large, uniform white kernels free from black spots and excessive moisture. Whether roasted with exotic spices for a savory crunch or used in gourmet curries and desserts, our Makhana delivers authentic taste and superior health benefits in every bite, supporting heart health and vitality.",
+            "image": "assets/images/slider_makhana.png",
+            "pdf": "",
+            "gallery": [
+                {
+                    "path": "assets/images/products/1770565274_0_Untitled_design__3_.png",
+                    "name": "3-4 Suta Makhana",
+                    "description": "This is our most cost-effective grade. While smaller in size, it retains the full nutritional value of premium fox nuts. It is the ideal choice for industrial processing where visual uniformity is not the priority.\r\n\r\nVisual: Small, semi-round kernels.\r\nIdeal Applications:\r\nProduction of Makhana Flour (Atta).\r\nGrounding for thickening pastes in instant gravy mixes.\r\nNamkeen mixtures (Chivda) where size is secondary to crunch."
+                },
+                {
+                    "path": "assets/images/products/1770565274_1_Untitled_design__5_.png",
+                    "name": "4-5 Suta Makhana",
+                    "description": "The \"Rasgulla\" grade. This is the standard commercial size widely found in domestic grocery markets. It offers a balance between quality and affordability, making it perfect for daily household consumption.\r\n\r\nVisual: Medium-sized, generally round with slight natural variations.\r\nIdeal Applications:\r\nGeneral trade (Kirana) and grocery retail packs.\r\nHousehold cooking (Curries, Kheer/Pudding).\r\nBudget-friendly roasted snack packs."
+                },
+                {
+                    "path": "assets/images/products/1770565274_2_Untitled_design__4_.png",
+                    "name": "5-6 Suta Makhana",
+                    "description": "Our best-selling grade for international markets. 5 Sutta kernels are carefully sorted for high expansion, resulting in a large, white, and perfectly spherical pop. This grade is the industry standard for branded snacks.\r\n\r\nVisual: Large, uniform, bright white, and round.\r\nIdeal Applications:\r\nExport: Meets the quality standards of USA, UK, and EU markets.\r\nFlavoured Snacks: Holds seasoning powder perfectly due to surface area.\r\nPremium Supermarket Retail Packaging.\r\n"
+                },
+                {
+                    "path": "assets/images/products/1770565274_3_Untitled_design__6_.png",
+                    "name": "6 Suta Makhana",
+                    "description": "The \"Gold Standard\" of Fox Nuts. These are the largest kernels available, hand-picked or precision-sorted for an impressive visual appeal. They offer a superior crunch and a premium mouthfeel that distinguishes luxury brands from competitors.\r\n\r\nVisual: Jumbo size, perfectly round, aesthetically flawless.\r\nIdeal Applications:\r\nGourmet & Luxury Gifting.\r\nHigh-End Hospitality (Hotels/First Class Catering).\r\nUltra-Premium Snack Brands looking for a USP (Unique Selling Point)."
+                }
+            ],
+            "qa_gallery": [],
+            "qa_video": "https://studio.youtube.com/video/fKbk0fP8rZk/edit",
+            "qa_video_title": "6 Sutta Makhana",
+            "qa_video_2": "https://youtube.com/shorts/uHxYUMO_7_U",
+            "highlights": [
+                {
+                    "icon": "fas fa-handshake",
+                    "title": "Direct Farm Sourcing",
+                    "desc": "Sourced directly from the Mallah community in Bihar, eliminating middlemen for 100% traceability."
+                },
+                {
+                    "icon": "fas fa-filter",
+                    "title": "Zero 'Thuddi' Guarantee",
+                    "desc": "Laser-sorted and hand-picked to ensure 5 Suta+ size (19mm+) with NO hard kernels."
+                },
+                {
+                    "icon": "fas fa-box-open",
+                    "title": "Export-Ready Packing",
+                    "desc": "Strict moisture control (<9%) and heavy-duty packaging to ensure crispness upon arrival."
+                }
+            ],
+            "specs": [
+                {
+                    "icon": "fas fa-ruler-combined",
+                    "title": "PREMIUM SIZE",
+                    "desc": "5 Suta / 6 Suta+"
+                },
+                {
+                    "icon": "fas fa-tint-slash",
+                    "title": "MOISTURE CONTROL",
+                    "desc": "< 10% Guaranteed"
+                }
+            ],
+            "fun_fact": "Makhana has been used in Ayurvedic medicine for thousands of years to treat various ailments and is considered a 'divine food' offered to deities during festivals.",
+            "profile_text": "",
+            "welcome_message": "",
+            "why_choose_custom": "You might worry about getting small, hard kernels or black spots in your bulk order. We completely understand. That is why we guarantee 99% popped efficiency with strict size grading (5 Suta / 6 Suta+). Our direct farm sourcing ensures you receive fresh, crunchy stock with less than 10% moisture, eliminating the risk of sogginess, mold, or stale taste upon arrival.",
+            "performance_prefix": "Top Performing",
+            "performance_gallery": [
+                "assets/images/performance/1770565405_perf_0_Untitled_design__6_.png",
+                "assets/images/performance/1770565405_perf_1_Natural-Roasted-Makhana-v2.jpg",
+                "assets/images/performance/1770565405_perf_2_Nurize_Makhana.jpg"
+            ],
+            "page3_image": "assets/images/products/1770567126_p3_makhana-3.jpg"
+        }
+    ],
+    "upload_section": {
+        "title": "Upload Your Story",
+        "description": "Are you a happy customer? Share your video feedback with us and get featured on our Wall of Trust."
+    }
+}

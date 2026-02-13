@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areca Catalog - Design Sample</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        /* A4 Reset */
+        body {
+            background: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media print {
+            body {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        /* 1. Header (Top 10%) */
+        .header {
+            height: 10%;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 3px solid #2E7D32;
+            /* Clean green line */
+        }
+
+        .header-logo img {
+            height: 50px;
+        }
+
+        .header-code {
+            text-align: right;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* 2. Hero & 3. Product Narrative (Upper Section) */
+        .hero-section {
+            height: 35%;
+            /* Approx 35-40% including narrative */
+            display: flex;
+            padding: 30px 40px;
+            gap: 30px;
+        }
+
+        /* Left: Visual (40% width relative to section) */
+        .hero-visual {
+            flex: 0 0 45%;
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .inset-image {
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inset-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Right: Narrative (The Hook) */
+        .hero-narrative {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            color: #2E7D32;
+            /* Green for Areca */
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .sub-heading {
+            font-weight: 500;
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .elevator-pitch {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            border-left: 4px solid #D98600;
+            /* Brand Orange accent */
+            padding-left: 15px;
+        }
+
+        /* 4. Spec Sheet (Middle Section) */
+        .spec-section {
+            padding: 10px 40px 20px;
+        }
+
+        .section-heading {
+            font-family: 'Montserrat', sans-serif;
+            color: #222;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .spec-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .spec-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .spec-label {
+            font-weight: 700;
+            color: #333;
+            width: 35%;
+        }
+
+        .spec-value {
+            color: #555;
+        }
+
+        /* 5. Logistics (Bottom Half/Money Section) */
+        .logistics-section {
+            padding: 10px 40px;
+            background: #F4F8F4;
+            /* Very light green tinge */
+            margin: 0 40px 20px 40px;
+            /* Inset slightly */
+            border-radius: 8px;
+        }
+
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            font-size: 13px;
+        }
+
+        .logistics-item strong {
+            display: block;
+            color: #2E7D32;
+            margin-bottom: 2px;
+        }
+
+        /* 6. Digital Trust (Bottom Right) */
+        .digital-trust {
+            position: absolute;
+            bottom: 80px;
+            right: 40px;
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .qr-code {
+            width: 70px;
+            height: 70px;
+            background: #eee;
+            /* Placeholder */
+            margin-right: 15px;
+        }
+
+        .trust-text {
+            font-size: 12px;
+            width: 140px;
+            line-height: 1.4;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* 7. Footer (Very Bottom) */
+        .footer {
+            margin-top: auto;
+            background: #002147;
+            /* Navy Blue */
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .footer-company {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Print Button */
+        .btn-print {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #D98600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="window.print()" class="btn-print no-print">🖨️ Print Catalog / Save PDF</button>
+
+    <div class="page">
+        <!-- 1. Header -->
+        <header class="header">
+            <div class="header-logo">
+                <img src="assets/images/logo.png" alt="APSS TradeSphere LLP">
+            </div>
+            <div class="header-code">
+                EXPORT PRODUCT CODE: APSS-ARC-10R
+            </div>
+        </header>
+
+        <!-- 2. Hero Section & 3. Narrative -->
+        <section class="hero-section">
+            <div class="hero-visual">
+                <img src="assets/images/product-areca-leaf.jpg" class="main-image" alt="Areca Plate">
+                <div class="inset-image">
+                    <!-- Zoom/Texture Placeholder -->
+                    <img src="assets/images/slider_areca.png" alt="Texture Zoom">
+                </div>
+            </div>
+
+            <div class="hero-narrative">
+                <h1>10-Inch Round Areca Dinner Plate</h1>
+                <div class="sub-heading">100% Biodegradable | Chemical-Free | Export Grade A</div>
+                <div class="elevator-pitch">
+                    "Handcrafted from fallen palm leaves in Karnataka. This sturdy, microwave-safe plate is designed for
+                    heavy meals. A sustainable alternative to plastic that composts in just 60 days."
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Technical Spec Sheet -->
+        <section class="spec-section">
+            <div class="section-heading">Technical Specifications</div>
+            <table class="spec-table">
+                <tr>
+                    <td class="spec-label">Material</td>
+                    <td class="spec-value">100% Natural Areca Palm Leaf</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Size / Diameter</td>
+                    <td class="spec-value">10 Inches (25.4 cm)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Shape</td>
+                    <td class="spec-value">Round (Ribbed borders for strength)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Grade</td>
+                    <td class="spec-value">Export Quality (Washed & Heat Pressed)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Feature</td>
+                    <td class="spec-value">Microwave Safe (2 mins) / Freezer Safe</td>
+                </tr> <!-- Feature typo fix from prompt -->
+                <tr>
+                    <td class="spec-label">Shelf Life</td>
+                    <td class="spec-value">12 Months (in dry storage)</td>
+                </tr>
+                <tr>
+                    <td class="spec-label">Origin</td>
+                    <td class="spec-value">Karnataka, India</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 5. Logistics & Packaging -->
+        <div style="padding: 0 40px; margin-bottom: 10px;">
+            <div class="section-heading">Packaging & Shipping Details</div>
+        </div>
+        <section class="logistics-section">
+            <div class="logistics-grid">
+                <div class="logistics-item">
+                    <strong>Retail Pack</strong>
+                    25 Plates per Shrink Wrap (with Silica Gel)
+                </div>
+                <div class="logistics-item">
+                    <strong>Master Carton</strong>
+                    4 Packs per Carton (100 Plates Total)
+                </div>
+                <div class="logistics-item">
+                    <strong>Carton Dimensions</strong>
+                    12 x 12 x 10 Inches
+                </div>
+                <div class="logistics-item">
+                    <strong>Carton Weight</strong>
+                    Approx 3.5 KG
+                </div>
+                <div class="logistics-item"
+                    style="grid-column: span 2; border-top: 1px solid #ddd; padding-top: 10px; margin-top: 5px;">
+                    <strong>Container Load (20ft)</strong>
+                    Approx 120,000 Plates
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Digital Trust -->
+        <div class="digital-trust">
+            <!-- QR Code Placeholder (Using an API for demo or local image if available) -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://apsstradesphere.com/quality-test"
+                class="qr-code" alt="Scan for Video">
+            <div class="trust-text">
+                Scan to watch the<br>
+                <span style="color:#D98600">Quality Stress Test</span><br>
+                video for this plate.
+            </div>
+        </div>
+
+        <!-- 7. Footer -->
+        <footer class="footer">
+            <div class="footer-company">Manufactured & Exported by: APSS TradeSphere LLP, Bangalore, India.</div>
+            <div>WhatsApp: +91 87000 72233 | Email: sales@apsstradesphere.com</div>
+            <div style="margin-top: 5px; opacity: 0.8;">Certifications: FSSAI | IEC | GST</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,717 @@
+/* 
+ * APSS TradeSphere - Main Stylesheet
+ * WordPress to PHP Migration
+ */
+
+/* ========================================
+   CSS Variables
+   ======================================== */
+:root {
+    /* Colors */
+    --color-gold: #D98600;
+    /* Romancy Theme Primary */
+    --color-cream: #FFF2DE;
+    /* Romancy Theme Secondary */
+    --color-black: #000000;
+    --color-orange: #EF7E44;
+    --color-light-gray: #F7F7F7;
+    --color-white: #FFFFFF;
+    --color-border: #E5E5E5;
+    --color-text: #333333;
+
+    /* Typography */
+    --font-primary: 'Barlow', sans-serif;
+    --font-secondary: 'Gilda Display', serif;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+
+    /* Spacing */
+    --container-width: 1290px;
+    --section-padding: 60px 0;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-slow: 1.6s ease;
+}
+
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-black);
+    /* Ensure headings use heading color */
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   Layout
+   ======================================== */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.section {
+    padding: var(--section-padding);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col-50 {
+    flex: 0 0 calc(50% - 10px);
+}
+
+.col-33 {
+    flex: 0 0 calc(33.333% - 14px);
+}
+
+.col-20 {
+    flex: 0 0 calc(20% - 16px);
+}
+
+/* ========================================
+   Header Styles
+   ======================================== */
+.site-header {
+    background-color: var(--color-black);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo img {
+    height: 60px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--color-gold);
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-gold);
+    transition: width var(--transition-fast);
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+}
+
+/* Dropdown Menu */
+.nav-item {
+    position: relative;
+}
+
+.main-nav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-black);
+    min-width: 260px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all var(--transition-fast);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid var(--color-gold);
+    display: block;
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgba(181, 150, 66, 0.1);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ========================================
+   Footer Styles
+   ======================================== */
+.site-footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    color: var(--color-gold);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+    color: var(--color-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #E3BB6A;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all var(--transition-slow);
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(150deg, var(--color-gold) 8%, var(--color-orange) 57%);
+    color: var(--color-white);
+    box-shadow: 6px 6px 1px #030303;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(15deg, var(--color-gold) 8%, var(--color-orange) 57%);
+    color: var(--color-white);
+}
+
+/* ========================================
+   Sections
+   ======================================== */
+.section-cream {
+    background-color: var(--color-cream);
+    background-image: url('../images/backgrounds/texture.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    position: relative;
+}
+
+.section-cream::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(254, 250, 224, 0.72);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section-black {
+    background-color: var(--color-black);
+    background-image: url('../images/backgrounds/texture-dark.png');
+    color: var(--color-white);
+}
+
+.section-gray {
+    background-color: var(--color-light-gray);
+}
+
+/* Section Headings */
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.7px;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gold);
+    margin-bottom: 15px;
+}
+
+.section-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   Product Grid
+   ======================================== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+    /* box-shadow: -7px 7px 1px #030303; removed heavy shadow */
+    transition: transform var(--transition-fast);
+    overflow: hidden;
+    /* Removed aspect-ratio and border to match WordPress */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card.gold {
+    background-color: var(--color-gold);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    /* Fixed height from WordPress */
+    object-fit: cover;
+    display: block;
+}
+
+.product-card h3 {
+    position: relative;
+    /* Restored to natural flow */
+    color: var(--color-white);
+    padding: 10px 0;
+    margin: 0;
+    /* Negative margin to ensure tight fit if needed, or 0 if flex works perfectly. 
+       WordPress had -18px, likely due to widget gaps. We can start with 0. 
+       Actually, let's keep it simple. */
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    /* WordPress uses capitalize */
+    text-align: center;
+    background-color: transparent;
+    /* Let container color show through */
+    z-index: 2;
+}
+
+.product-card.gold h3 {
+    background-color: transparent;
+}
+
+/* ========================================
+   Feature Cards
+   ======================================== */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: rgba(0, 0, 0, 0.33);
+    border: 1px solid var(--color-white);
+    border-radius: 10px;
+    padding: 18px 10px 10px;
+    text-align: center;
+    box-shadow: -7px 7px 1px #030303;
+}
+
+.feature-icon {
+    width: 33px;
+    height: 33px;
+    background-color: var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    padding: 9px;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    margin: 0;
+}
+
+/* ========================================
+   Scroll to Top Button
+   ======================================== */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-fast);
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background-color: var(--color-orange);
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.text-center {
+    text-align: center;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* ========================================
+   Document Slider Styles
+   ======================================== */
+.document-slider-container {
+    position: relative;
+    padding: 0 50px;
+    /* Space for buttons */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.document-track-wrapper {
+    overflow: hidden;
+    padding: 20px 0;
+    /* Space for hover effects */
+}
+
+.document-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-out;
+}
+
+.document-slide {
+    flex: 0 0 300px;
+    /* Width of each card */
+    max-width: 100%;
+}
+
+.document-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    /* Equal height */
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.document-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: var(--color-gold);
+}
+
+.document-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-gold);
+    transform: scaleX(0);
+    transition: transform var(--transition-fast);
+    transform-origin: left;
+}
+
+.document-card:hover::before {
+    transform: scaleX(1);
+}
+
+.document-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(181, 150, 66, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--color-gold);
+    font-size: 24px;
+}
+
+.document-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
+.document-title {
+    font-size: 18px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.document-meta {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.document-btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 8px 25px;
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    font-weight: var(--font-weight-semibold);
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.document-btn:hover {
+    background: var(--color-gold);
+    color: var(--color-white);
+}
+
+.doc-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.doc-slider-btn:hover {
+    background: var(--color-gold);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.doc-slider-btn.prev {
+    left: 0;
+}
+
+.doc-slider-btn.next {
+    right: 0;
+}
+
+/* Hide buttons on mobile if not needed, or adjust */
+@media (max-width: 768px) {
+    .document-slider-container {
+        padding: 0 10px;
+    }
+
+    .doc-slider-btn {
+        display: none;
+        /* User can just scroll if we allow overflowing */
+    }
+
+    .document-track-wrapper {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+    }
+
+    .document-slide {
+        scroll-snap-align: center;
+    }
+}

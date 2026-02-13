@@ -1,0 +1,169 @@
+/* 
+ * Responsive Styles
+ * Mobile and Tablet Breakpoints
+ */
+
+/* ========================================
+   Mobile Sticky Footer (Base Style - Hidden)
+   ======================================== */
+.mobile-sticky-footer {
+    display: none;
+}
+
+/* ========================================
+   Tablet (768px and below)
+   ======================================== */
+@media (max-width: 768px) {
+
+    /* Layout */
+    .col-50,
+    .col-33,
+    .col-20 {
+        flex: 0 0 100%;
+    }
+
+    /* Header */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-black);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Section Headings */
+    .section-title {
+        font-size: 25px;
+    }
+
+    .section-description {
+        padding: 0 15px;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 25px;
+        font-size: 13px;
+    }
+    
+    /* Mobile Sticky Footer (Visible) */
+    .mobile-sticky-footer {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        height: 60px;
+    }
+
+    .sticky-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        gap: 10px;
+        transition: background-color 0.2s;
+    }
+
+    .phone-btn {
+        background-color: #D98600; /* Theme Gold */
+    }
+    
+    .phone-btn:hover {
+        background-color: #bfa51d;
+    }
+
+    .whatsapp-btn {
+        background-color: #25D366; /* WhatsApp Green */
+    }
+
+    .whatsapp-btn:hover {
+        background-color: #1daa51;
+    }
+    
+    .scroll-top {
+        bottom: 70px !important; /* Move up above footer */
+    }
+}
+
+/* ========================================
+   Mobile (480px and below)
+   ======================================== */
+@media (max-width: 480px) {
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Logo */
+    .site-logo img {
+        height: 45px;
+    }
+
+    /* Scroll to Top */
+    .scroll-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        bottom: 80px; /* Adjusted for sticky footer */
+        right: 20px;
+    }
+}

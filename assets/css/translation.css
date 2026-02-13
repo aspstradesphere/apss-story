@@ -1,0 +1,118 @@
+/* Google Translate Customization - Premium Design */
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+#google_translate_element {
+    display: inline-block;
+}
+
+/* MAIN BUTTON CONTAINER */
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: 1px solid var(--color-gold) !important;
+    padding: 0 12px !important;
+    border-radius: 50px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: var(--color-gold) !important;
+}
+
+/* GLOBE ICON (Pseudo-element) */
+.goog-te-gadget-simple::before {
+    content: '🌐';
+    font-size: 18px;
+    margin-right: 8px;
+    line-height: normal;
+    display: block;
+    margin-top: -2px;
+}
+
+/* THE WRAPPER SPAN (Immediate Child) */
+.goog-te-gadget-simple>span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+
+/* THE ANCHOR LINK (Inside Wrapper) */
+.goog-te-gadget-simple>span>a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    height: 100% !important;
+    color: var(--color-white) !important;
+}
+
+/* THE TEXT SPAN (First child of Anchor) - "Select Language" */
+.goog-te-gadget-simple>span>a>span:first-child {
+    display: block !important;
+    color: var(--color-white) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: normal !important;
+}
+
+.goog-te-gadget-simple:hover>span>a>span:first-child {
+    color: var(--color-white) !important;
+    /* Keep white on hover or change to black */
+}
+
+/* --- HIDE JUNK --- */
+
+/* Hide Any other spans inside the anchor (Pipe |, Arrow v) */
+.goog-te-gadget-simple>span>a>span:not(:first-child) {
+    display: none !important;
+}
+
+/* Hide Images */
+.goog-te-gadget-simple img {
+    display: none !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    #google_translate_element {
+        position: absolute;
+        top: 15px;
+        right: 60px;
+    }
+
+    .goog-te-gadget-simple {
+        padding: 0 8px !important;
+        border: none !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    /* Hide Text Wrapper on Mobile -> Icon Only */
+    .goog-te-gadget-simple>span {
+        display: none !important;
+    }
+
+    .goog-te-gadget-simple::before {
+        margin-right: 0;
+        font-size: 22px;
+        color: var(--color-gold);
+        margin-top: 0;
+    }
+}
