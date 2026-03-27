@@ -309,8 +309,8 @@
         },
         {
             "id": "chilli",
-            "hidden": true,
-            "name": "Red Chilli",
+            "hidden": false,
+            "name": "Red Chilli (Whole & Powder)",
             "description": "Spicy Guntur & Byadgi Varieties",
             "image": "assets/images/slider_red_chilli.png",
             "pdf": "",
